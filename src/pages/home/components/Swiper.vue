@@ -2,7 +2,7 @@
   <div class="wrapper">
     <swiper :options="swiperOption">
       <swiper-slide v-for="item of swiperList" :key="item.id">
-        <img class="swiper-img" :src="item.imgSrc"/>
+        <img class="swiper-img" :src="item.imgUrl"/>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -11,8 +11,6 @@
 
 <script>
 import 'swiper/dist/css/swiper.css'
-import ImgSwiper1 from '@/assets/images/swiper1.png'
-import ImgSwiper2 from '@/assets/images/swiper2.png'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   name: 'HomeSwiper',
@@ -28,10 +26,10 @@ export default {
       },
       swiperList: [{
         id: '001',
-        imgSrc: ImgSwiper1
+        imgUrl: 'http://img2.ph.126.net/pTABtg17j7nRDZX6Vdh6Kw==/6631646108819674574.png'
       }, {
         id: '002',
-        imgSrc: ImgSwiper2
+        imgUrl: 'http://img2.ph.126.net/_E0VAB0Fb6-bR9K5QUNxag==/6632745620444886572.png'
       }]
     }
   }

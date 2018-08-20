@@ -31,14 +31,13 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+@import '~@/assets/styles/mixins.styl'
 .wrapper >>> .swiper-pagination-bullet-active
   background: #fff
 .wrapper
   background: #eee
-  height: 0
-  overflow hidden
   padding-bottom: 24.53%
-  width: 100%
+  HeightZero()
   .swiper-img
     width: 100%
 </style>

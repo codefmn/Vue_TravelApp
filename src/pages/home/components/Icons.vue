@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon" v-for="item of page" :key="item.id">
             <img :src="item.imgUrl">
@@ -14,46 +14,15 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
-    return ({
-      iconList: [{
-        id: '001',
-        imgUrl: 'https://img1.doubanio.com/view/photo/l/public/p2531283808.jpg',
-        desc: '机票机票机票机票机票'
-      }, {
-        id: '002',
-        imgUrl: 'https://img3.doubanio.com/view/photo/l/public/p2531283805.jpg',
-        desc: '风景'
-      }, {
-        id: '003',
-        imgUrl: 'https://img1.doubanio.com/view/photo/l/public/p2531283808.jpg',
-        desc: '机票'
-      }, {
-        id: '004',
-        imgUrl: 'https://img3.doubanio.com/view/photo/l/public/p2531283805.jpg',
-        desc: '风景'
-      }, {
-        id: '005',
-        imgUrl: 'https://img1.doubanio.com/view/photo/l/public/p2531283808.jpg',
-        desc: '机票'
-      }, {
-        id: '006',
-        imgUrl: 'https://img3.doubanio.com/view/photo/l/public/p2531283805.jpg',
-        desc: '风景'
-      }, {
-        id: '007',
-        imgUrl: 'https://img1.doubanio.com/view/photo/l/public/p2531283808.jpg',
-        desc: '机票'
-      }, {
-        id: '008',
-        imgUrl: 'https://img3.doubanio.com/view/photo/l/public/p2531283805.jpg',
-        desc: '风景'
-      }, {
-        id: '009',
-        imgUrl: 'https://img3.doubanio.com/view/photo/l/public/p2531283805.jpg',
-        desc: '风景'
-      }]
-    })
+    return {
+      swiperOption: {
+        autoplay: false
+      }
+    }
   },
   computed: {
     pages () {

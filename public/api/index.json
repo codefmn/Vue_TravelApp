@@ -1,7 +1,7 @@
 {
   "ret": true,
   "data": {
-    "city": "深圳",
+    "city": "北京",
     "swiperList": [{
         "id": "0001",
         "imgUrl": "https://img3.doubanio.com/view/photo/l/public/p2531283792.jpg"
@@ -50,7 +50,7 @@
         "id": "0001",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
         "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+        "desc": "东方宫殿建筑代表，世界宫殿建筑典范，东方宫殿建筑代表"
       }, {
         "id": "0002",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
@@ -60,7 +60,7 @@
         "id": "0003",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
         "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
+        "desc": "我爱北京天安门，天安门上太阳升，我爱北京天安门"
       }, {
         "id": "0004",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
@@ -86,7 +86,7 @@
         "id": "0003",
         "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
         "title": "寻找北京的皇城范儿",
-        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+        "desc": "数百年的宫廷庙宇，至今依旧威严霸气，数百年的宫廷庙宇，至今依旧威严霸气"
       }, {
         "id": "0004",
         "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",

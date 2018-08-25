@@ -17,6 +17,7 @@
           class="result-item border-bottom"
           v-for="item of resultList"
           :key="item.id"
+          @click="handleCityClick(item.name)"
         >
         {{item.name}}
         </li>
@@ -43,6 +44,12 @@ export default {
       keyword: '',
       resultList: [],
       timer: null
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
     }
   },
   watch: {

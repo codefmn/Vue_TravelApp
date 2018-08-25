@@ -3,17 +3,14 @@
     <div class="header-left"><div class="icon-arrow-left2"></div></div>
     <div class="header-input"><i class="icon-search"></i> Input to search</div>
     <router-link to="/city">
-      <div class="header-right">{{this.city}} <i class="icon-circle-down"></i></div>
+      <div class="header-right">{{this.$store.state.city}} <i class="icon-circle-down"></i></div>
     </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader',
-  props: {
-    city: String
-  }
+  name: 'HomeHeader'
 }
 </script>
 

@@ -3,14 +3,18 @@
     <div class="header-left"><div class="icon-arrow-left2"></div></div>
     <div class="header-input"><i class="icon-search"></i> Input to search</div>
     <router-link to="/city">
-      <div class="header-right">{{this.$store.state.city}} <i class="icon-circle-down"></i></div>
+      <div class="header-right">{{this.city}} <i class="icon-circle-down"></i></div>
     </router-link>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  computed: {
+    ...mapState(['city'])
+  }
 }
 </script>
 
@@ -38,6 +42,7 @@ export default {
     .header-right
       color #fff
       float right
+      padding 0 .1rem
       text-align center
-      width 1.24rem
+      min-width 1.2rem
 </style>

@@ -26,10 +26,9 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~@/assets/styles/varibles.styl'
+@import '~@/assets/styles/mixins.styl'
 .list
-  display flex
-  flex-direction column
-  justify-content center
+  FlexColumnCenter()
   padding .15rem
   position absolute
   top 2rem

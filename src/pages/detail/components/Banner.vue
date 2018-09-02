@@ -1,16 +1,41 @@
 <template>
-  <div class="banner">
-    <img :src="bannerImg" alt="banner">
-    <div class="banner-title">{{sightName}}</div>
+  <div>
+    <div class="banner" @click="handleBannerClick">
+      <img :src="bannerImg" alt="banner">
+      <div class="banner-title">{{sightName}} （点击查看大图）</div>
+    </div>
+    <common-gallery
+      @close="handleGalleryClose"
+      v-show="showGallery"
+      :galleryImgs="galleryImgs"
+    ></common-gallery>
   </div>
 </template>
 
 <script>
+import CommonGallery from '@/common/Gallery'
 export default {
   name: 'DetailBanner',
+  components: {
+    CommonGallery
+  },
   props: {
     bannerImg: String,
-    sightName: String
+    sightName: String,
+    galleryImgs: Array
+  },
+  data () {
+    return {
+      showGallery: false
+    }
+  },
+  methods: {
+    handleBannerClick () {
+      this.showGallery = true
+    },
+    handleGalleryClose () {
+      this.showGallery = false
+    }
   }
 }
 </script>
@@ -24,7 +49,7 @@ export default {
   img
     width 100%
   .banner-title
-    background-image linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background-image linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
     color #fff
     font-size .3rem
     padding .2rem

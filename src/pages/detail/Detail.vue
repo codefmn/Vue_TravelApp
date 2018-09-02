@@ -3,6 +3,7 @@
     <detail-banner
       :bannerImg="bannerImg"
       :sightName="sightName"
+      :galleryImgs="galleryImgs"
     ></detail-banner>
   </div>
 </template>
@@ -18,7 +19,8 @@ export default {
   data () {
     return {
       bannerImg: '',
-      sightName: ''
+      sightName: '',
+      galleryImgs: []
     }
   },
   mounted () {
@@ -28,6 +30,7 @@ export default {
         if (response.ret && response.data) {
           this.bannerImg = response.data.bannerImg
           this.sightName = response.data.sightName
+          this.galleryImgs = response.data.galleryImgs
         }
       })
   }

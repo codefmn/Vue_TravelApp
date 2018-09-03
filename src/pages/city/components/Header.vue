@@ -23,6 +23,7 @@ export default {
   line-height .9rem
   text-align center
   .icon-undo
+    position absolute
     color #fff
     font-size .4rem
     float left

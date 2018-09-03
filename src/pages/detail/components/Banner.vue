@@ -2,7 +2,8 @@
   <div>
     <div class="banner" @click="handleBannerClick">
       <img :src="bannerImg" alt="banner">
-      <div class="banner-title">{{sightName}} （点击查看大图）</div>
+      <div class="banner-title">{{sightName}}</div>
+      <div class="banner-number"><i class="icon-images"></i> {{galleryImgs.length}}</div>
     </div>
     <common-gallery
       @close="handleGalleryClose"
@@ -51,7 +52,14 @@ export default {
   .banner-title
     background-image linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
     color #fff
-    font-size .3rem
+    font-size .4rem
     padding .2rem
     PositionZeroBottom()
+  .banner-number
+    color #fff
+    font-size .4rem
+    padding .2rem
+    position absolute
+    right 0
+    bottom 0
 </style>

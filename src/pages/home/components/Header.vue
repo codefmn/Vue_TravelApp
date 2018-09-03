@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="header-left"><div class="icon-arrow-left2"></div></div>
+    <div class="header-left"><div class="icon-undo"></div></div>
     <div class="header-input"><i class="icon-search"></i> Input to search</div>
     <router-link to="/city">
       <div class="header-right">{{this.city}} <i class="icon-circle-down"></i></div>
@@ -28,7 +28,7 @@ export default {
     .header-left
       float left
       width .64rem
-      .icon-arrow-left2
+      .icon-undo
         font-size .4rem
         margin .2rem .1rem
     .header-input

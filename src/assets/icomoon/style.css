@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?v66mdt');
-  src:  url('fonts/icomoon.eot?v66mdt#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?v66mdt') format('truetype'),
-    url('fonts/icomoon.woff?v66mdt') format('woff'),
-    url('fonts/icomoon.svg?v66mdt#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sgjlb1');
+  src:  url('fonts/icomoon.eot?sgjlb1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sgjlb1') format('truetype'),
+    url('fonts/icomoon.woff?sgjlb1') format('woff'),
+    url('fonts/icomoon.svg?sgjlb1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,11 +24,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-ticket:before {
+  content: "\e939";
+}
+.icon-undo:before {
+  content: "\e967";
+}
 .icon-search:before {
   content: "\e986";
-}
-.icon-arrow-left2:before {
-  content: "\ea40";
 }
 .icon-circle-down:before {
   content: "\ea43";

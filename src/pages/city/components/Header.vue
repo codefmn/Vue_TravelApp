@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <router-link to="/">
-      <div class="header-left"><div class="icon-arrow-left2"></div></div>
+      <div class="header-left"><div class="icon-undo"></div></div>
     </router-link>
     城市选择
   </div>
@@ -22,7 +22,7 @@ export default {
   height .9rem
   line-height .9rem
   text-align center
-  .icon-arrow-left2
+  .icon-undo
     color #fff
     font-size .4rem
     float left

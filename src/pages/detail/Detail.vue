@@ -32,7 +32,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('api/detail.json', {
+    axios.get('https://www.easy-mock.com/mock/5b8ec1bb9125da0e4952ad30/travel/detail', {
       params: {
         id: this.$route.params.id
       }

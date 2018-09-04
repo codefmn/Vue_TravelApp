@@ -41,7 +41,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('/api/city.json')
+    axios.get('https://www.easy-mock.com/mock/5b8ec1bb9125da0e4952ad30/travel/city')
       .then(response => response.data)
       .then(response => {
         if (response.ret && response.data) {

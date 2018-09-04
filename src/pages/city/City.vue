@@ -48,7 +48,6 @@ export default {
           this.hotCities = response.data.hotCities
           this.cities = response.data.cities
         }
-        console.log(response)
       })
   }
 }

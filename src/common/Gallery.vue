@@ -1,19 +1,25 @@
 <template>
-  <div class="gallery" @click="handleGalleryClick">
-    <div class="wrapper">
-      <swiper :options="swiperOption">
-        <swiper-slide v-for="(item,index) of galleryImgs" :key="index">
-          <img class="gallery-img" :src="item"/>
-        </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
+  <fade-animation>
+    <div class="gallery" @click="handleGalleryClick">
+      <div class="wrapper">
+        <swiper :options="swiperOption">
+          <swiper-slide v-for="(item,index) of galleryImgs" :key="index">
+            <img class="gallery-img" :src="item"/>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
     </div>
-  </div>
+  </fade-animation>
 </template>
 
 <script>
+import FadeAnimation from './FadeAnimation'
 export default {
   name: 'CommonGallery',
+  components: {
+    FadeAnimation
+  },
   props: {
     galleryImgs: Array
   },
